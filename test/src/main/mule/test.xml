@@ -14,5 +14,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	Message:"Hello world mule"
 }]' doc:name="Set Payload" doc:id="64e4d87f-73b1-49f5-b0d5-4b71ddfae2e2" />
 		<logger level="INFO" doc:name="Logger" doc:id="cc3c9067-1024-44a8-82bd-417da037b360" message="This is my first logger"/>
+		<set-variable value="#[payload]" doc:name="Set Variable" doc:id="7ae8e244-2324-415b-86f1-d5c96c0a012a" variableName="setvar"/>
 	</flow>
 </mule>
