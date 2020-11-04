@@ -11,7 +11,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="testFlow" doc:id="87963b0b-e0ec-45f4-8b09-5a135a6cbb41" >
 		<http:listener doc:name="/test" doc:id="2065106b-7bd5-496b-952a-3ffe62f1cf7c" config-ref="HTTP_Listener_config" path="${http.resource}"/>
 		<set-payload value='#[{
-	Message:"Hello world"
+	Message:"Hello world mule"
 }]' doc:name="Set Payload" doc:id="64e4d87f-73b1-49f5-b0d5-4b71ddfae2e2" />
+		<logger level="INFO" doc:name="Logger" doc:id="cc3c9067-1024-44a8-82bd-417da037b360" message="This is my first logger"/>
 	</flow>
 </mule>
